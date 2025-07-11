@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Fonts */
 
 .raleway {
@@ -14,6 +18,17 @@
 }
 
 /* Shared Class */
+.accent-btn {
+    color:#FFFFFF;
+    background-color: #4E47FF;
+    border-radius: 10px ;
+    padding: 12px 36px ;
+}
+.accent-btn:hover{
+    background-color:#f1ee0e;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
 
 .center-container {
     max-width: 1440px;
@@ -43,12 +58,14 @@ header{
     height: 698px;
     
 }
+main section {
+    margin-bottom: 137px;
+}
 /* nav styles */
 nav{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 50px 0px 50px 0px;
     margin-left: 150px;
     margin-right: 150px;
 
@@ -61,18 +78,10 @@ nav h3{
     
 }
 nav button{
-    color:#FFFFFF;
-    background-color: #4E47FF;
-    border-radius: 10px ;
     font-size: 16px;
     font-weight: bold;
-    padding: 12px 36px ;
 }
-nav button:hover{
-    background-color:#f1ee0e;
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
-}
+
 
 
 div{
@@ -88,12 +97,8 @@ div h3{
 }
 
 div button{
-     color:#FFFFFF;
-    background-color: #4E47FF;
-    border-radius: 10px ;
     font-size: 16px;
     font-weight: bold;
-    padding: 12px 36px ;
 }
 
 /* section style */
@@ -102,7 +107,7 @@ div button{
  display: flex;
   justify-content: space-between;
   align-items: center;
-    margin: 116px 159px 0px 141px;
+    margin-top: 116px;
     
 }
 
@@ -127,14 +132,7 @@ div button{
   margin: 0;
 }
 
-section p{
-    font-size: 24px;
-    font-family: "Raleway", sans-serif;
-    color: rgba(37, 36, 50, 0.5);
-    line-height: 30px;
-    width: 517px;
 
-}
 .sec-img{
     border-radius:48px;
     width:403px ;
@@ -142,9 +140,162 @@ section p{
 }
 
 .section-button{
-    background-color: #4E47FF;
-    color: #FFFFFF;
     height: 48;
-    border-radius: 10px;
-    padding: 12px 36px 12px 36px;
 }
+
+/* section2 */
+
+.users {
+  padding: 50px 142px;
+  border-radius: 24px;
+  background-color:rgba(78, 71, 255, 0.1);
+}
+.users h2 {
+  color: #252432;
+   text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+ 
+}
+
+.counter {
+  text-align: center;
+}
+.counter h2 {
+    color: #4e47ff;
+  font-family: "Inter", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0;
+}
+.counter p {
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+.user-box {
+  display: flex;
+  gap: 158px;
+  justify-content: center;
+}
+
+
+/* section3 */
+.testimonial-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #F2EDED;
+    padding: 24px;
+    /* width: 366px; */
+    border-radius: 10px;
+}
+
+.testimonial-title {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.testimonial-description {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1E1E1E;
+}
+
+.testimonial-section h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 42px;
+    color: #252432;
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+}
+
+.testimonial-user-info {
+    display: flex;
+    gap: 12px;
+    align-items: flex;
+}
+
+.testimonial-avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.testimonial-user-name {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #757575;
+    font-weight: 600;
+}
+
+.testimonial-date {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #B3B3B3;
+}
+
+.testimonial-user-details p {
+    margin: 0;
+}
+
+
+/* section4 */
+.contact-section {
+    height: 632px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-section h1 {
+    font-size: 97px;
+    line-height: 120%;
+    font-weight: 700;
+    width: 528px;
+}
+
+.contact-section form {
+    width: 497px;
+    gap: 19px;
+}
+
+.contact-section form label {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 500;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+     border-radius: 10px;
+      width:497px;
+    padding: 20px 32px;
+    margin-top: 10px;
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+    border: 1px solid #D6DDED;
+}
+
+.submit-button{
+    font-size: 16px;
+    width: 497px;
+    font-weight: bold;
+}
+
+
+
