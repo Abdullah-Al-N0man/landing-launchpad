@@ -24,6 +24,8 @@
 /* common color */
 .header-logo {
     font-weight: 800;
+    line-height: 150px;
+    font-size: 34px;
 }
 .header-logo button{
     color:#FFFFFF;
@@ -96,9 +98,31 @@ div button{
 
 /* section style */
 
+.Action{
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+    
+}
+
+.action-box{
+    width: 517px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.action-box h2{
+      font-weight: 700;
+  font-size: 42px;
+  color: #252432;
+  margin: 0;
+}
+
 section h3{
-    font-weight:bold ;
+    font-weight: 700 ;
     font-size: 42px;
+    color:rgba(37, 36, 50, 1) ;
     
 }
 section p{
@@ -106,6 +130,7 @@ section p{
     font-style: ;
     color: rgba(37, 36, 50, 0.5);
     line-height: 30px;
+    width: 517px;;
     
     
 
@@ -122,6 +147,6 @@ section button{
     font-weight: 700;
     font-size: 16px;
     line-height: 150px;
-
+    font-family: "inter",sans-serif;
 
 }
